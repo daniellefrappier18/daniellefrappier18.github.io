@@ -1025,7 +1025,7 @@ div.popup {
 }
 
 @media only screen and (max-width: 480px) {
-    html {
+    .home-page { 
         overflow-y: scroll;
     }
     .intro-content h1 {

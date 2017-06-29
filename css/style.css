@@ -1025,6 +1025,9 @@ div.popup {
 }
 
 @media only screen and (max-width: 480px) {
+    html {
+        overflow-y: scroll;
+    }
     .intro-content h1 {
         font-size: 30px;
     }

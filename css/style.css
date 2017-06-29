@@ -1029,6 +1029,9 @@ div.popup {
         overflow-y: scroll;
         position: relative !important;
     }
+    .menu { 
+        overflow: auto;
+    }
     .intro-content h1 {
         font-size: 30px;
     }
@@ -1048,9 +1051,6 @@ div.popup {
         display: block;
         float: none;
         margin: 5px;
-    }
-    .contact-form button {
-        width: 100%;
     }
     .project .buttons a {
         width: 30px;

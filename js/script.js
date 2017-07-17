@@ -1,11 +1,3 @@
-/*  Preloader */
-$(window).load(function () {
-		
-    $('#preloader').delay(250).fadeOut('slow', function () {
-        $('.profile-page, .resume-page, .contact-page, .portfolio-page').hide();
-    });
-});
-
 $(document).ready(function () {
 
     'use strict';

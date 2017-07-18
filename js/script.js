@@ -1,7 +1,7 @@
 /*  Preloader */
 $(window).load(function () {
       
-   $('#preloader').delay(150).fadeOut('slow', function () {
+   $('#preloader').delay(250).fadeOut('slow', function () {
         $('.profile-page, .resume-page, .contact-page, .portfolio-page').hide();
     });
 });

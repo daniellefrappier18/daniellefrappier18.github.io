@@ -251,6 +251,10 @@ a:focus {
     color: #0f6a5c;
     text-decoration: none;
 }
+
+.txt-center {
+    text-align: center;
+}
 /* # Homepage
 ---------------------------------------------------------------------------------------------------- */
 .home-page {
@@ -338,6 +342,9 @@ a:focus {
 }
 .social-media a[href*="codepen"]:before {
     content: "\f1cb";
+}
+.social-media a[href*="jsfiddle"]:before {
+    content: "\f1cc";
 }
 .social-media a:hover {
     opacity: .5;

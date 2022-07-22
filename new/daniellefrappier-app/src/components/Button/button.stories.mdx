@@ -1,0 +1,25 @@
+import { Button } from './button.component';
+import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+
+<Meta title='Components/Button' component={Button} />
+
+# Button
+
+Used for Button stuff
+
+<Canvas>
+  <Story
+    name='Details'
+    args={{
+      buttonType: 'primary',
+      href: '/'
+    }}
+  >
+    {(args) => (
+      <Button {...args}>
+        Test
+      </Button>
+    )}
+  </Story>
+</Canvas>
+

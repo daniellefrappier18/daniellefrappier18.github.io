@@ -1,0 +1,24 @@
+import { IntroContent } from './intro-content.component';
+import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+
+<Meta title='Components/Intro Content' component={IntroContent} />
+
+# Button
+
+Used for Button stuff
+
+<Canvas>
+  <Story
+    name='Details'
+    args={{
+      
+    }}
+  >
+    {(args) => (
+      <IntroContent {...args}>
+        <h1>Test</h1>
+      </IntroContent>
+    )}
+  </Story>
+</Canvas>
+

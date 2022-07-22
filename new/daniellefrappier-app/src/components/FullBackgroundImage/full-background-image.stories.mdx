@@ -1,0 +1,24 @@
+import { FullBackgroundImage } from './full-background-image.component';
+import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+
+<Meta title='Components/Full Background Image' component={FullBackgroundImage} />
+
+# Button
+
+Used for Button stuff
+
+<Canvas>
+  <Story
+    name='Details'
+    args={{
+      srcSet: 'https://www.daniellefrappier.com/images/danielle_frappier_bg.jpg'
+    }}
+  >
+    {(args) => (
+      <FullBackgroundImage {...args}>
+        Test
+      </FullBackgroundImage>
+    )}
+  </Story>
+</Canvas>
+

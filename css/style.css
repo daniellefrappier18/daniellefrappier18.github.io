@@ -205,6 +205,7 @@ h4,
 h5,
 h6 {
     font-family: 'Oswald', sans-serif;
+    display: inline-block;
 }
 h1 {
     font-size: 63px;

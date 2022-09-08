@@ -15,7 +15,6 @@ export const ActiveSectionContext = createContext<SectionType >({} as SectionTyp
 const ActiveSectionContextProvider: FC<Props> = ({ children, ...props }) => {
     
     const [currentSection, setCurrentSection] = useState('home');
-    console.log(currentSection);
     
     return (
         <ActiveSectionContext.Provider value={{currentSection, setCurrentSection}}>

@@ -3,6 +3,7 @@ import { makeStyles, createStyles, Theme } from "@material-ui/core/styles";
 import { Paper, Grid } from "@material-ui/core";
 import { FullBackgroundImage } from '../components/FullBackgroundImage/full-background-image.component'
 import { IntroContent } from '../components/IntroContent/intro-content.component';
+import { SocialLink } from '../components/SocialLink/social-link.component';
 import { ActiveSectionContext } from '../contexts/ActiveSectionContext';
 import { MenuButton } from '../components/MenuButton/menu-button.component';
 import { useTransition, animated } from 'react-spring';
@@ -11,8 +12,9 @@ import Projects from './Projects';
 import Resume from './Resume';
 import Contact from './Contact';
 
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoffee } from '@fortawesome/free-solid-svg-icons'
+import { faComment, faPaperPlane, faCode, faIdBadge } from '@fortawesome/free-solid-svg-icons'
 
 
 const useStyles = makeStyles((theme: Theme) =>
@@ -79,10 +81,12 @@ function Home() {
         <Grid item md={6} xs={12} id='main' className={`${classes.gridItem}`}>
           <Paper elevation={0} className={`${classes.paper}`}>
           <FullBackgroundImage srcSet='./img/danielle_frappier_bg.jpg'>
-            <IntroContent>
-              <>
-              <h1 >Hi there!<br/> My name is <span>Danielle</span></h1>
-              </>
+            <IntroContent mainTitle="Hi there! My name is" accentMainTitle=" Danielle" subTitle="Front End Developer">
+              <div>
+                <SocialLink icon='faLinkedin'aria-label="LinkedIn" href="https://www.linkedin.com/in/daniellefrappier/" target="_blank" />
+                <SocialLink icon='faGithub'  aria-label="GitHub" href="https://github.com/daniellefrappier18" target="_blank" />
+                <SocialLink icon='faCodepen' aria-label="Codepen" href="https://codepen.io/daniellefrapp/" target="_blank" />
+              </div>
             </IntroContent>
           </FullBackgroundImage>
           </Paper>
@@ -99,18 +103,21 @@ function Home() {
             <Paper elevation={0} className={classes.paper}>
               <MenuButton id='profile'>
                 <FullBackgroundImage srcSet='./img/profile.jpg'>
-               
                   <IntroContent>
-                  
-                    <>
-                
-                      <h2>PR<span>O</span>FILE</h2>
-                      <h3>Some words about mebbb.</h3>
-                  
-                    </>
-                    
-                  </IntroContent>
-               
+                        <Grid container  
+                          justifyContent="space-around"
+                          alignItems="center" 
+                          style={{ height: "100%" }}
+                        >
+                          <Grid item lg={3} md={3} xs={3} style={{ textAlign: "center" }} >
+                            <FontAwesomeIcon icon={faIdBadge} size="4x"/>
+                          </Grid>
+                          <Grid item lg={9} md={9} xs={9}>
+                              <h2>PR<span>O</span>FILE</h2>
+                              <h3>Some stuff about me.</h3>
+                            </Grid>
+                          </Grid>
+                      </IntroContent>
                 </FullBackgroundImage>
               </MenuButton>
             </Paper>
@@ -133,16 +140,14 @@ function Home() {
                       style={{ height: "100%" }}
                     >
                       <Grid item lg={3} md={3} xs={3} style={{ textAlign: "center" }} >
-                        <FontAwesomeIcon icon={faCoffee} size="4x"/>
+                        <FontAwesomeIcon icon={faPaperPlane} size="4x"/>
                       </Grid>
                       <Grid item lg={9} md={9} xs={9}>
-                   
                           <h2>RE<span>S</span>UME</h2>
                           <h3>Check out my experience and skills.</h3>
-                       
                         </Grid>
                       </Grid>
-                    </IntroContent>
+                  </IntroContent>
                 </FullBackgroundImage>
               </MenuButton>
             </Paper>
@@ -158,10 +163,19 @@ function Home() {
               <MenuButton id='projects'>
                 <FullBackgroundImage srcSet='./img/portfolio.jpg'>
                   <IntroContent>
-                      <>
-                        <h2>PRO<span>J</span>ECTS</h2>
-                        <h3>Have a look at Some Stuff I've Done.</h3>
-                      </>
+                      <Grid container  
+                        justifyContent="space-around"
+                        alignItems="center" 
+                        style={{ height: "100%" }}
+                      >
+                        <Grid item lg={3} md={3} xs={3} style={{ textAlign: "center" }} >
+                          <FontAwesomeIcon icon={faCode} size="4x"/>
+                        </Grid>
+                        <Grid item lg={9} md={9} xs={9}>
+                            <h2>P<span>R</span>OJECTS</h2>
+                            <h3>Have a look at some stuff I've done.</h3>
+                          </Grid>
+                        </Grid>
                     </IntroContent>
                 </FullBackgroundImage>
               </MenuButton>
@@ -178,11 +192,19 @@ function Home() {
               <MenuButton id='contact'>
                 <FullBackgroundImage srcSet='./img/contact.jpg'>
                   <IntroContent>
-                      <>
-    
-                        <h2>CO<span>N</span>TACT</h2>
-                        <h3>Want to say hello?</h3>
-                      </>
+                      <Grid container  
+                        justifyContent="space-around"
+                        alignItems="center" 
+                        style={{ height: "100%" }}
+                      >
+                        <Grid item lg={3} md={3} xs={3} style={{ textAlign: "center" }} >
+                          <FontAwesomeIcon icon={faComment} size="4x"/>
+                        </Grid>
+                        <Grid item lg={9} md={9} xs={9}>
+                            <h2>CO<span>N</span>TACT</h2>
+                            <h3>Want to say hello?</h3>
+                          </Grid>
+                        </Grid>
                     </IntroContent>
                 </FullBackgroundImage>
               </MenuButton>

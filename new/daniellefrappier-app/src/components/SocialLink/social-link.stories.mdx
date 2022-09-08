@@ -1,0 +1,23 @@
+import { SocialLink } from './social-link.component';
+import * as Icons from '@fortawesome/free-solid-svg-icons'
+import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+
+<Meta title='Components/Social Link' component={SocialLink} />
+
+# SocialLink
+
+Used for SocialLink stuff
+
+<Canvas>
+  <Story
+    name='Details'
+    args={{
+      icon: faCoffee,
+    }}
+  >
+    {(args) => (
+      <SocialLink {...args} />
+    )}
+  </Story>
+</Canvas>
+

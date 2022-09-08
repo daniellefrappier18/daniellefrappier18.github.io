@@ -11,11 +11,18 @@ const Profile = ( {
   className
 }: ProfileProps ) => {
     return (
-    <div><p>This is the profile section</p>
+      <Grid container spacing={0} style={{ height: "100%" }}>
+        <Grid item xs={12} sm={12} md={6} lg={6} xl={6} className={className}>
+          profile image goes here
+        </Grid>
+        <Grid item xs={12} sm={12} md={6} lg={6} xl={6} className={className}>
+          <MenuButton id='home'>test</MenuButton>
+          <div><p>This is the profile section</p></div>
+        </Grid>
+      </Grid>
 
-    <MenuButton id='home'>test</MenuButton>
     
-    </div>
+
 
 
     );

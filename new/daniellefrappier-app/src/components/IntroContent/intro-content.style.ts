@@ -20,3 +20,24 @@ export const IntroContentWrapper = styled.div `
     }
 `;
 
+export const IntroContentMain = styled.h1 `
+    font-family: 'Oswald', sans-serif;
+    font-size: 63px;
+    font-weight: 400;
+    color: #fff;
+
+    .accent {
+        color: #F62459;
+        font-weight: 700;
+    }
+`
+
+export const IntroContentSubtitle = styled.h2 `
+    color: #F62459;
+    text-align: center;
+    font-weight: 300;
+    font-size: 30px;
+}
+
+`
+

@@ -1,3 +1,6 @@
 node_modules 
 package-lock.json
 new/daiellefrappier/node_modules/*
+new/.DS_Store
+new/daniellefrappier-app/.DS_Store
+new/daniellefrappier-app/node_modules/.cache/*

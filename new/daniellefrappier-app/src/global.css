@@ -28,6 +28,12 @@ body {
     padding:0;
 }
 
+.content {
+    margin: 80px auto 30px auto;
+    max-width: 1200px;
+    padding: 0 20px;
+}
+
 h1,
 h2,
 h3,
@@ -54,6 +60,12 @@ h2 {
 h2 span {
     color: #F62459;
 }
+
+h2.section-title {
+    color: #343333;
+    font-size:35px;
+}
+
 h3 {
     font-family: 'Open Sans', sans-serif;
     color: #fff;

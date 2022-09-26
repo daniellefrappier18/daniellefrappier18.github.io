@@ -80,7 +80,7 @@ function Home() {
       <Grid container spacing={0} style={{ height: "100%" }}>
         <Grid item md={6} xs={12} id='main' className={`${classes.gridItem}`}>
           <Paper elevation={0} className={`${classes.paper}`}>
-          <FullBackgroundImage srcSet='./img/danielle_frappier_bg.jpg'>
+          <FullBackgroundImage className="content-section" srcSet='./img/danielle_frappier_bg.jpg'>
             <IntroContent mainTitle="Hi there! My name is" accentMainTitle=" Danielle" subTitle="Front End Developer">
               <div>
                 <SocialLink icon='faLinkedin'aria-label="LinkedIn" href="https://www.linkedin.com/in/daniellefrappier/" target="_blank" />

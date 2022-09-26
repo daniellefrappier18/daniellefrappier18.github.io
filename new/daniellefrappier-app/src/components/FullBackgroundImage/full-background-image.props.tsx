@@ -4,4 +4,5 @@ export type FullBackgroundImageProps = Omit<
     'ref'
     > & {
         srcSet?: string;
+        className?: string;
 };

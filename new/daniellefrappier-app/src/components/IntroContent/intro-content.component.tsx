@@ -2,7 +2,8 @@ import React from 'react';
 import { 
     IntroContentWrapper,
     IntroContentMain,
-    IntroContentSubtitle
+    IntroContentSubtitle,
+    SectionContent
  } from './intro-content.style';
 import { IntroContentProps } from './into-content.props'
 
@@ -10,6 +11,7 @@ export const IntroContent = ( {
     mainTitle,
     accentMainTitle,
     subTitle,
+    sectionTitle,
     children,
     ...restProps
 }: IntroContentProps) => {
@@ -21,6 +23,10 @@ export const IntroContent = ( {
             { subTitle && (
                 <IntroContentSubtitle>{subTitle}</IntroContentSubtitle>
             )}
+            { sectionTitle && (
+                <SectionContent>{sectionTitle}</SectionContent>
+            )}
+
             {children}
         </IntroContentWrapper>
 

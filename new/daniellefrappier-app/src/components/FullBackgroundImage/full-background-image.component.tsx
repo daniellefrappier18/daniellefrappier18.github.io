@@ -8,11 +8,12 @@ import { FullBackgroundImageProps } from './full-background-image.props'
 export const FullBackgroundImage = ( {
     srcSet,
     children,
+    className,
     ...restProps
 }: FullBackgroundImageProps) => {
     return (
         <>
-            <FullBackgroundImageComponent srcSet={srcSet} {...restProps}>{children}</FullBackgroundImageComponent>
+            <FullBackgroundImageComponent className={className} srcSet={srcSet} {...restProps}>{children}</FullBackgroundImageComponent>
         </>
 
     );

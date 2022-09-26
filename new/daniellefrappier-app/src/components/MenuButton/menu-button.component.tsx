@@ -9,6 +9,7 @@ import { MenuButtonProps } from './menu-button.props'
 export const MenuButton = ( {
     id,
     children,
+    className,
 }: MenuButtonProps) => {
     const ref = useRef(null);
     const {setCurrentSection} = useContext(ActiveSectionContext);
@@ -18,6 +19,6 @@ export const MenuButton = ( {
         setCurrentSection(e.currentTarget.id);
       }; 
     return (
-        <MenuButtonWrapper ref={ref} onClick={openSection} id={id}>{children}</MenuButtonWrapper>
+        <MenuButtonWrapper className={className} ref={ref} onClick={openSection} id={id}>{children}</MenuButtonWrapper>
     );
 }

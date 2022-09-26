@@ -15,9 +15,12 @@ export const FullBackgroundImageComponent = styled.div<Props>`
     transition-duration: 2s;
     transition-timing-function: linear;
 
-
     @media screen and (min-width: 960px) {
         background-position: center; 
+    }
+
+    &.content-section {
+        background-size: cover;
     }
 
 

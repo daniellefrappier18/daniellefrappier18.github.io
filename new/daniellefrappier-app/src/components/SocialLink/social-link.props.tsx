@@ -8,5 +8,4 @@ export type SocialLinkProps = Omit<
     href?: string;
     /** Target prop for if href type */
     target?: '_blank' | '_self' | '_parent' | '_top';
-
 };

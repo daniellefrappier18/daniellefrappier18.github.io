@@ -1,23 +1,33 @@
 import { SocialLink } from './social-link.component';
-import * as Icons from '@fortawesome/free-solid-svg-icons'
-import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+import * as Icons from '@fortawesome/free-brands-svg-icons';
+import { Meta, Story, Canvas, ArgsTable } from '@storybook/addon-docs/blocks';
 
 <Meta title='Components/Social Link' component={SocialLink} />
 
 # SocialLink
 
-Used for SocialLink stuff
+Used for Social Link stuff
 
 <Canvas>
   <Story
     name='Details'
     args={{
-      icon: faCoffee,
+      icon: 'faGithub',
+      href: '#'
+    }}
+    argTypes={{
+      icon: {
+        description: 'Font Awesome SVG Icon Element',
+        mapping: Icons,
+        control: {
+          type: 'select',
+          options: [...Object.keys(Icons)],
+        }
+      },
     }}
   >
     {(args) => (
-      <SocialLink {...args} />
+      <SocialLink {...args}/>
     )}
   </Story>
 </Canvas>
-

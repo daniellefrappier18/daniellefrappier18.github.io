@@ -11,10 +11,13 @@ import Profile from './Profile';
 import Projects from './Projects';
 import Resume from './Resume';
 import Contact from './Contact';
-
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faComment, faPaperPlane, faCode, faIdBadge } from '@fortawesome/free-solid-svg-icons'
+
+import { IconDefinition } from '@fortawesome/fontawesome-svg-core'
+import { faGithub, faLinkedin, faCodepen } from '@fortawesome/free-brands-svg-icons'
+
+
 
 
 const useStyles = makeStyles((theme: Theme) =>
@@ -83,9 +86,9 @@ function Home() {
           <FullBackgroundImage className="content-section" srcSet='./img/danielle_frappier_bg.jpg'>
             <IntroContent mainTitle="Hi there! My name is" accentMainTitle=" Danielle" subTitle="Front End Developer">
               <div>
-                <SocialLink icon='faLinkedin'aria-label="LinkedIn" href="https://www.linkedin.com/in/daniellefrappier/" target="_blank" />
-                <SocialLink icon='faGithub'  aria-label="GitHub" href="https://github.com/daniellefrappier18" target="_blank" />
-                <SocialLink icon='faCodepen' aria-label="Codepen" href="https://codepen.io/daniellefrapp/" target="_blank" />
+                <SocialLink icon={faGithub as IconDefinition} aria-label="LinkedIn" href="https://www.linkedin.com/in/daniellefrappier/" target="_blank" />
+                <SocialLink icon={faLinkedin as IconDefinition} aria-label="GitHub" href="https://github.com/daniellefrappier18" target="_blank" />
+                <SocialLink icon={faCodepen as IconDefinition} aria-label="Codepen" href="https://codepen.io/daniellefrapp/" target="_blank" />
               </div>
             </IntroContent>
           </FullBackgroundImage>
@@ -161,7 +164,7 @@ function Home() {
           >
             <Paper elevation={0} className={classes.paper}>
               <MenuButton id='projects'>
-                <FullBackgroundImage srcSet='./img/portfolio.jpg'>
+                <FullBackgroundImage srcSet='./img/projects.jpg'>
                   <IntroContent>
                       <Grid container  
                         justifyContent="space-around"

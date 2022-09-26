@@ -30,10 +30,20 @@ const Profile = ( {
             </>
           </MenuButton>
           <Container className="content">
-              <h2 className="section-title">A little about me</h2>
-              <p>I am a detail oriented, deadline-driven, Front End developer in the Boston area who has a varied ability in the development/design arena, from creating clean, semantic, CMS driven websites, bullet proof responsive emails, responsive landing pages, and various other projects.</p>
-
-              <p>Outside of work I'm mom and wife. I love to watch zombie and sci-fi movies, read post-apocalyptic novels, run obstacle course races, spend the weekend at the beach in the summer or snowboarding on a mountain in the winter.</p>
+            <h2 className="section-title">A little about me</h2>
+            <p>I am a detail oriented, deadline-driven, Front End developer in the Boston area who has a varied ability in the development/design arena, from creating clean, semantic, CMS driven websites, bullet proof responsive emails, responsive landing pages, and various other projects.</p>
+            <p>Outside of work I'm mom and wife. I love to watch zombie and sci-fi movies, reading post-apocalyptic novels, run obstacle course races, spend the weekend at the beach in the summer or snowboarding on a mountain in the winter.</p>
+                <Grid container spacing={3}>
+                  <Grid spacing={3} item xs={12} sm={12} md={4} lg={4} xl={4}>
+                      <img src='./img/danielle-snowboarding.jpg' className="content-image" alt='Danielle Frappier Snowboarding'/>
+                  </Grid>
+                  <Grid spacing={3} item xs={12} sm={12} md={4} lg={4} xl={4}>
+                      <img src='./img/danielle-frappier-surfing.jpg' className="content-image" alt='Danielle Frappier Surfing'/>
+                  </Grid>
+                  <Grid spacing={3} item xs={12} sm={12} md={4} lg={4} xl={4}>
+                       <img src='./img/danielle-frappier-jay.jpg' className="content-image" alt='Danielle Frappier at Jay Peak'/>
+                  </Grid>
+                </Grid>
           </Container>
         </Grid>
       </Grid>

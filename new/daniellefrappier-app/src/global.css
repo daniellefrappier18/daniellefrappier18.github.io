@@ -28,6 +28,8 @@ body {
     padding:0;
 }
 
+p { margin-top: 0; }
+
 .content {
     margin: 80px auto 30px auto;
     max-width: 1200px;
@@ -80,10 +82,12 @@ h3 {
 #root {
     width: 100vw;
     height: 100vh;
-    overflow: hidden;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 2000;
+}
+.content-image {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    border: 2px solid #F62459;
 }
 

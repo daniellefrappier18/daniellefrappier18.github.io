@@ -4,9 +4,7 @@ import {
   SocialLinkComponentIcon 
  } from './social-link.style';
 import { SocialLinkProps } from './social-link.props';
-import {
-  IconDefinition,
-} from '@fortawesome/fontawesome-svg-core'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import * as Icons from '@fortawesome/free-brands-svg-icons'; 
 
 export const SocialLink = ( {
@@ -16,11 +14,16 @@ export const SocialLink = ( {
     ...restProps
 }: SocialLinkProps) => {
   console.log(Icons)
-  const i = Icons as { [key: number ]: IconDefinition };
-  const iconName = i[icon];
+
+  const iconName = icon;
+  console.log(iconName)
+  const Icon = () => <FontAwesomeIcon icon={iconName} />
+
+  //const iconName = Icons[icon] as IconDefinition;
+
     return (
       <SocialLinkComponent href={href} target={target} {...restProps}>
-        <SocialLinkComponentIcon icon={iconName}/>
+        <Icon />
       </SocialLinkComponent>
     );
 };

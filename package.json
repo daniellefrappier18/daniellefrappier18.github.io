@@ -1,4 +1,8 @@
 {
+  "name": "daniellefrappier-app",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": ".",
   "dependencies": {
     "@types/react-addons-css-transition-group": "^15.0.7",
     "@types/react-transition-group": "^4.4.5",

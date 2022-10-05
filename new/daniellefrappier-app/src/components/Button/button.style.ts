@@ -8,7 +8,7 @@ export interface Props {
 
 export const ButtonComponent = styled.button<Props>`
     ${(props) =>
-        props.buttonType === 'primary' ? `border: 1px solid #F62459; color: #F62459;` : 'background: #F62459; color: #FFFFFF;'
+        props.buttonType === 'primary' ? `border: 1px solid #F62459; color: #F62459; background-color: transparent;` : 'background: #F62459; color: #FFFFFF; border: none;'
     };
     font-size: 2rem;
     display: flex;
@@ -27,7 +27,7 @@ export const ButtonComponent = styled.button<Props>`
     &:focus {
         ${(props) =>
             props.href !== undefined && 
-            `display: inline-flex; text-decoration: none; justify-content:center;`
+            `display: inline; text-decoration: none; justify-content:center;`
         };
     }
 

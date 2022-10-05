@@ -3,7 +3,7 @@ import Grid from "@material-ui/core/Grid";
 import Container from "@material-ui/core/Grid";
 import { MenuButton } from '../components/MenuButton/menu-button.component';
 import { Button } from '../components/Button/button.component';
-import { FullBackgroundImage } from '../components/FullBackgroundImage/full-background-image.component'
+import { FullBackgroundImage } from "../components/FullBackgroundImage/full-background-image.component";
 import { IntroContent } from '../components/IntroContent/intro-content.component';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faXmark } from '@fortawesome/free-solid-svg-icons'

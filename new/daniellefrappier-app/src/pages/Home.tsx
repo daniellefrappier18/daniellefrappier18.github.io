@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { makeStyles, createStyles, Theme } from "@material-ui/core/styles";
 import { Paper, Grid } from "@material-ui/core";
-import { FullBackgroundImage } from '../components/FullBackgroundImage/full-background-image.component'
+import { FullBackgroundImage } from "../components/FullBackgroundImage/full-background-image.component";
 import { IntroContent } from '../components/IntroContent/intro-content.component';
 import { SocialLink } from '../components/SocialLink/social-link.component';
 import { ActiveSectionContext } from '../contexts/ActiveSectionContext';
@@ -13,12 +13,8 @@ import Resume from './Resume';
 import Contact from './Contact';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faComment, faPaperPlane, faCode, faIdBadge } from '@fortawesome/free-solid-svg-icons'
-
 import { IconDefinition } from '@fortawesome/fontawesome-svg-core'
 import { faGithub, faLinkedin, faCodepen } from '@fortawesome/free-brands-svg-icons'
-
-
-
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({

@@ -1,8 +1,7 @@
+import React from "react";
 
-export type FullBackgroundImageProps = Omit<
-    JSX.IntrinsicElements['div'], 
-    'ref'
-    > & {
-        srcSet?: string;
-        className?: string;
-};
+export interface FullBackgroundImageProps
+  extends React.PropsWithChildren<Omit<JSX.IntrinsicElements["div"], "ref">> {
+  srcSet?: string;
+  className?: string;
+}

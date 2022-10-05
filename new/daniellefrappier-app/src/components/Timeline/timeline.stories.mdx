@@ -1,0 +1,35 @@
+import { Timeline } from './timeline.component';
+import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+
+<Meta title='Components/Timeline' component={Timeline} />
+
+# Timeline
+
+Used for creating resume timeline.
+
+<Canvas>
+  <Story
+    name='Details'
+    args={{
+      title: 'Work Experience',
+      jobs: [
+        {
+          title: "Senior Systems Design Engineer",
+          date: "/ September 2021 - Current",
+          location: "Monster",
+          description: (
+            <>
+              <li>Team lead for Randstad Brand Design System. As Team Lead I was responsible for mentoring junior engineers, establishing code standards and best practices and making decisions on the architecture of the design system.</li>
+              <li>Built React component library with TypeScript Styled Components, wrote unit tests using Jest and React Testing Library and documented components in Storybook.</li>
+              <li>Provided support for monster.com homepage built using Gatsby.</li>
+            </>)
+        }
+      ],
+    }}
+  >
+    {(args) => (
+      <Timeline {...args} />
+    )}
+  </Story>
+</Canvas>
+

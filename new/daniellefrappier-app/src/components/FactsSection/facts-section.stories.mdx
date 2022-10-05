@@ -1,0 +1,45 @@
+import { FactsSection } from './facts-section.component';
+import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+import { faXmark } from "@fortawesome/free-solid-svg-icons";
+
+
+<Meta title='Components/Facts Sections' component={FactsSection} parameters={{
+    layout: 'fullscreen'
+  }}/>
+
+# Facts Section
+
+Used for Fact Section in Profile page.
+
+<Canvas>
+  <Story
+    name='Details'
+    args={{
+      title: 'Facts Section',
+      facts: [
+        {
+          factTitle: "Fact Title 1",
+          factDescription: "Fact Description",
+          icon: faXmark,
+        },
+        {
+          factTitle: "Fact Title 2",
+          factDescription: "Fact Description",
+          icon: faXmark,
+        },
+        {
+          factTitle: "Fact Title 3",
+          factDescription: "Fact Description",
+          icon: faXmark,
+        },
+      ]
+    }}
+  >
+    {(args) => (
+      <FactsSection {...args}/>
+    )}
+  </Story>
+</Canvas>
+
+
+

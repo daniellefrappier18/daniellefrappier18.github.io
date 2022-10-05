@@ -1,11 +1,9 @@
 import React from 'react';
 import { 
-  SocialLinkComponent,
-  SocialLinkComponentIcon 
+  SocialLinkComponent, 
  } from './social-link.style';
 import { SocialLinkProps } from './social-link.props';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import * as Icons from '@fortawesome/free-brands-svg-icons'; 
 
 export const SocialLink = ( {
     icon,
@@ -13,13 +11,9 @@ export const SocialLink = ( {
     target,
     ...restProps
 }: SocialLinkProps) => {
-  console.log(Icons)
 
   const iconName = icon;
-  console.log(iconName)
   const Icon = () => <FontAwesomeIcon icon={iconName} />
-
-  //const iconName = Icons[icon] as IconDefinition;
 
     return (
       <SocialLinkComponent href={href} target={target} {...restProps}>

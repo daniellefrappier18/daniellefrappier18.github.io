@@ -68,7 +68,7 @@ export const ItemTitleContainer = styled.div`
 export const ItemTitle = styled.h3`
     font-family: 'Oswald', sans-serif;
     color: #F62459;
-    font-size: 18px
+    font-size: 18px;
     font-weight: 500;
     line-height: 1.42;
     margin: 10px 0;

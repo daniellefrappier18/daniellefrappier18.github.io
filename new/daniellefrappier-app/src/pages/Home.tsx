@@ -52,14 +52,14 @@ function Home() {
   const classes = useStyles();
   const { currentSection } = useContext(ActiveSectionContext);
   const transitionHome = useTransition(currentSection === 'home', {
-    from: { y: -800, opacity: 1, height: `100%` },
-    enter: { y: 0, opacity: 1, height: `100%` },
-    leave: { y: 800, opacity: 0, height: `100%` },
+    from: { y: -800, opacity: 1, height: '100%', width: '100%'},
+    enter: { y: 0, opacity: 1, height: '100%', width: '100%'},
+    leave: { y: 800, opacity: 0, height: '100%', width: '100%'},
   });
 
   const transitionPages = useTransition(currentSection !== 'home', {
-    from: { x: 800, opacity: 1, height: `100%` },
-    enter: { x: 0, opacity: 1, height: `100%` },
+    from: { x: 800, opacity: 1, height: '100%', width: '100%'},
+    enter: { x: 0, opacity: 1, height: '100%', width: '100%'},
   });
 
   return (
@@ -76,7 +76,7 @@ function Home() {
 
     {transitionHome((style, item) =>
       item ? <animated.div style={style}>
-      <Grid container spacing={0} style={{ height: "100%" }}>
+      <Grid container spacing={0} style={{ height: "100%", position: "fixed"}}>
         <Grid item md={6} xs={12} id='main' className={`${classes.gridItem}`}>
           <Paper elevation={0} className={`${classes.paper}`}>
           <FullBackgroundImage className="content-section" srcSet='./img/danielle_frappier_bg.jpg'>

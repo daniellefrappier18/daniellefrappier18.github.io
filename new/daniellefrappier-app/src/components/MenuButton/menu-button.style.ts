@@ -22,9 +22,9 @@ export const MenuButtonWrapper = styled.button`
         top: 20px;
         font-family: 'Oswald', sans-serif;
         font-size: 20px;
-        width: auto;
-        height: 20px;
-        background: none;
+        width: 80px;
+        height: 40px;
+        background: rgba(255,255,255,0.75);
 
         &:hover {
             opacity: 0.6;

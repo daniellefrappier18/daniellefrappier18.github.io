@@ -21,10 +21,15 @@ export const FullBackgroundImageComponent = styled.div<Props>`
 
     &.content-section {
         background-size: cover;
+        position: fixed;
+        width: 50%;
+        overflow: hidden;
+        @media only screen and (max-width: 992px) {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            min-height: 300px;
+        }
     }
-
-
-
-
 `;
 

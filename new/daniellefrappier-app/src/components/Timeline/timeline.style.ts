@@ -52,7 +52,7 @@ export const ItemTitleContainer = styled.div`
     margin: 0;
     padding: 10px;
     position: relative;
-    border: none;
+    border: 1px solid #eee;
 
     :before {
         border-color: transparent transparent transparent #eee;
@@ -84,10 +84,16 @@ export const ItemSubtitle = styled.span`
 `;
 
 export const ItemText = styled.ul`
-    margin-top: 0;
-    margin-bottom: 10px;
+    margin: 10px 0;
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
+
+    li {
+        font-family: 'Open Sans',sans-serif;
+        font-size: 16px;
+        line-height: 1.5;
+        color: #343333;
+    }
 `;
 
 

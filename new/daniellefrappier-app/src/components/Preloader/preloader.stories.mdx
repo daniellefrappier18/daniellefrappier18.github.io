@@ -1,0 +1,25 @@
+import { Preloader } from './preloader.component';
+import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+
+<Meta title='Components/Preloader' component={Preloader} />
+
+# Button
+
+Used for preloading
+
+<Canvas>
+  <Story
+    name='Details'
+    args={{
+      className: 'test',
+      waitBeforeShow: 3000,
+    }}
+  >
+    {(args) => (
+      <Preloader {...args}>
+        <div>Children Content</div>
+      </Preloader>
+    )}
+  </Story>
+</Canvas>
+

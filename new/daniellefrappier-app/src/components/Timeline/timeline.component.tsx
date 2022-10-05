@@ -31,8 +31,7 @@ export const Timeline = ( {
                                 <ItemSubtitle>{job.date} <br/> {job.location}</ItemSubtitle>
                             </ItemTitle>
                         </ItemTitleContainer>
-                            <ItemText>{job.description}</ItemText>
-                        
+                        <ItemText>{job.description}</ItemText>
                     </ItemContent>
                 </Item>
             ))}

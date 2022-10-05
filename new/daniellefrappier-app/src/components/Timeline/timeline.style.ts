@@ -52,7 +52,6 @@ export const ItemTitleContainer = styled.div`
     margin: 0;
     padding: 10px;
     position: relative;
-    border: 1px solid #eee;
 
     :before {
         border-color: transparent transparent transparent #eee;

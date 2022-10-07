@@ -14,7 +14,7 @@ import Contact from './Contact';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faComment, faPaperPlane, faCode, faIdBadge } from '@fortawesome/free-solid-svg-icons'
 import { IconDefinition } from '@fortawesome/fontawesome-svg-core'
-import { faGithub, faLinkedin, faCodepen } from '@fortawesome/free-brands-svg-icons'
+import { faGithub, faLinkedin, faCodepen, faJsfiddle } from '@fortawesome/free-brands-svg-icons'
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -85,6 +85,7 @@ function Home() {
                 <SocialLink icon={faGithub as IconDefinition} aria-label="LinkedIn" href="https://www.linkedin.com/in/daniellefrappier/" target="_blank" />
                 <SocialLink icon={faLinkedin as IconDefinition} aria-label="GitHub" href="https://github.com/daniellefrappier18" target="_blank" />
                 <SocialLink icon={faCodepen as IconDefinition} aria-label="Codepen" href="https://codepen.io/daniellefrapp/" target="_blank" />
+                <SocialLink icon={faJsfiddle as IconDefinition} aria-label="Codepen" href="https://jsfiddle.net/user/daniellefrappier/fiddles/" target="_blank" />
               </div>
             </IntroContent>
           </FullBackgroundImage>

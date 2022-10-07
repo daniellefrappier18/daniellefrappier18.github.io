@@ -8,7 +8,7 @@ import { PreloaderProps } from './preloader.props';
 
 export const Preloader = ({
     children, 
-    waitBeforeShow = 500,
+    waitBeforeShow,
     className,
     ...restProps
 }: PreloaderProps) => {

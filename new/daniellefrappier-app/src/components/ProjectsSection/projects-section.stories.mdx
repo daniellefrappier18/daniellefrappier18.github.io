@@ -1,0 +1,42 @@
+import { ProjectsSection } from './projects-section.component';
+import { Button } from '../Button/button.component';
+import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+
+<Meta title='Components/Projects Section' component={ProjectsSection} />
+
+# Projects Section
+
+Used for listing projects in the projects section.
+
+<Canvas>
+  <Story
+    name='Details'
+    args={{
+      projects: [
+        {
+          title: 'Project 1',
+          description: 'This is a project',
+          builtWith: 'AngularJS HTML/LESS',
+          children: <Button buttonType='primary' size='small' href='#'>View Project</Button>,
+        },
+        {
+          title: 'Project 2',
+          description: 'This is a project',
+          builtWith: 'AngularJS HTML/LESS',
+          children: <Button buttonType='primary' size='small' href='#'>View Project</Button>,
+        },
+        {
+          title: 'Project 3',
+          description: 'This is a project',
+          builtWith: 'AngularJS HTML/LESS',
+          children: <Button buttonType='primary' size='small' href='#'>View Project</Button>,
+        },
+      ],
+    }}
+  >
+    {(args) => (
+      <ProjectsSection {...args}/>
+    )}
+  </Story>
+</Canvas>
+

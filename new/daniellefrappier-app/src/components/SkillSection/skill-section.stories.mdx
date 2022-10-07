@@ -1,0 +1,53 @@
+import { SkillSection } from './skill-section.component';
+import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+
+<Meta title='Components/Skill Section' component={SkillSection} />
+
+# Timeline
+
+Used for creating a skill bar for the resume page.
+
+<Canvas>
+  <Story
+    name='Details'
+    args={{
+      title: 'Skills',
+      subtitle: 'Languages',
+      skills: [
+        {
+          title: 'JavaScript',
+          level: 80,
+        },
+        {
+          title: 'TypeScript',
+          level: 40,
+        },
+        {
+          title: 'React',
+          level: 80,
+        },
+        {
+          title: 'Styled Components',
+          level: 70,
+        },
+        {
+          title: 'Jest',
+          level: 30,
+        },
+        {
+          title: 'React Testing Library',
+          level: 30,
+        },
+        {
+          title: 'AngularJS',
+          level: 40,
+        },
+      ],
+    }}
+  >
+    {(args) => (
+      <SkillSection {...args} />
+    )}
+  </Story>
+</Canvas>
+

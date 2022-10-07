@@ -1,0 +1,27 @@
+import { MenuButton } from './menu-button.component';
+import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faXmark } from '@fortawesome/free-solid-svg-icons'
+
+<Meta title='Components/Menu Button' component={MenuButton} />
+
+# Button
+
+Used for sections on homepage and close button for internal sections. 
+
+<Canvas>
+  <Story
+    name='Details'
+    args={{
+      id: 'home',
+      className: 'close'
+    }}
+  >
+    {(args) => (
+      <MenuButton {...args}>
+        <>Close <FontAwesomeIcon icon={faXmark} /></>
+      </MenuButton>
+    )}
+  </Story>
+</Canvas>
+

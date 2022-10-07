@@ -1,7 +1,7 @@
 type Job = {
     title: string;
     date: string;
-    location: string;
+    location?: string;
     description: JSX.Element;
 }
 export type TimelineProps = Omit<

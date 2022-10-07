@@ -68,6 +68,12 @@ h2.section-title {
     font-size:35px;
 }
 
+h3.section-title {
+    color: #343333;
+    font-size:20px;
+    margin: 10px 0;
+}
+
 h3 {
     font-family: 'Open Sans', sans-serif;
     color: #fff;
@@ -90,4 +96,12 @@ h3 {
     height: auto;
     border: 2px solid #F62459;
 }
+a {
+    color: #F62459;
+    text-decoration: none;
+}
 
+a:hover {
+    color: #F62459;
+    text-decoration: underline;
+}

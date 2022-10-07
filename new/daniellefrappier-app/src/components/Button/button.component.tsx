@@ -6,10 +6,11 @@ export const Button = ( {
     buttonType="primary",
     href,
     isFullWidth = false,
+    size = 'medium',
     children,
     ...restProps
 }: ButtonProps) => {
     return (
-        <ButtonComponent as={href ? 'a' : 'button'} href={href} role={href ? undefined : 'button'} buttonType={buttonType} isFullWidth={isFullWidth} {...restProps}>{children}</ButtonComponent>
+        <ButtonComponent as={href ? 'a' : 'button'} href={href} role={href ? undefined : 'button'} size={size} buttonType={buttonType} isFullWidth={isFullWidth} {...restProps}>{children}</ButtonComponent>
     );
 };

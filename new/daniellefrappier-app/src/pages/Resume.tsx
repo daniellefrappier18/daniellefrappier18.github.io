@@ -8,6 +8,7 @@ import { Timeline } from "../components/Timeline/timeline.component";
 import { IntroContent } from '../components/IntroContent/intro-content.component';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faXmark } from '@fortawesome/free-solid-svg-icons'
+import { SkillSection } from '../components/SkillSection/skill-section.component';
 
 type ResumeProps = {
     className?: string;
@@ -20,7 +21,7 @@ const Jobs = [
     location: "Monster",
     description: (
       <>
-      <li>Team lead for Randstad Brand Design System. As Team Lead I was responsible for mentoring junior engineers, establishing code standards and best practices and making decisions on the architecture of the design system.</li>
+      <li>Team lead for Randstad Brand Design System. Responsible for mentoring junior engineers, establishing code standards and best practices and making decisions on the architecture of the design system.</li>
       <li>Built React component library with TypeScript & Styled Components, wrote unit tests using Jest and React Testing Library and documented components in Storybook.</li>
       <li>Provided support for monster.com homepage built using Gatsby.</li>
       </>)
@@ -96,6 +97,76 @@ const Jobs = [
       </>)
   },
 ];
+const Skills = [
+  {
+    title: 'JavaScript',
+    level: 80,
+  },
+  {
+    title: 'TypeScript',
+    level: 40,
+  },
+  {
+    title: 'React',
+    level: 80,
+  },
+  {
+    title: 'Styled Components',
+    level: 70,
+  },
+  {
+    title: 'Jest',
+    level: 30,
+  },
+  {
+    title: 'React Testing Library',
+    level: 30,
+  },
+  {
+    title: 'AngularJS',
+    level: 40,
+  },
+];
+const Subtitle = 
+  <>
+  See full list on <a href="./docs/Danielle-Frappier-Resume-2022.pdf" target="_blank">resume</a>.
+  </>;
+const Education = [
+  {
+    title: "Framingham State University",
+    date: " / 2001 - 2006",
+    description: (
+      <>
+      <li>BA, Graphic Design</li>
+      <li>Minors in Computer Science and Communication Arts</li>
+      </>)
+  },
+  {
+    title: "Online Courses",
+    date: " / Google / Codecademy / Mijingo / AGI Training",
+    description: (
+      <>
+      <li>Google SEO Certification - 2022</li>
+      <li>Google SEO Certification - 2022</li>
+      <li>Codecademy Courses - 2017 - 2019 <br/>
+      jQuery<br/>
+      Saas<br/>
+      Javascript<br/>
+      PHP<br/>
+      AngularJS 1.X<br/>
+      Learn ReactJS: Part I<br/>
+      Learn ReactJS: Part II
+      </li>
+      <li>Mijingo Courses - 2018 <br/>
+      Craft CMS Essentials<br/>
+      Flexible Twig Templates in Craft<br/>
+      Up and Running with ExpressionEngine
+      </li>
+      <li>UX Design - AGI Training - 2014</li>
+      <li>HTML5 - 2012</li>
+      </>)
+  }
+];
 
 
 const Resume = ( {
@@ -117,9 +188,11 @@ const Resume = ( {
           <Container className="content">
           <h2 className="section-title">What I've been up to lately</h2>
               <p>You can download my Resume in pdf and docx format below. Or scroll on to read more about my experience, skills and education.</p>
-              <Button buttonType='primary' style={{display: 'inline-block'}}>Download Resume (PDF)</Button>
-              <Button buttonType='secondary' style={{display: 'inline-block'}}>Download Resume (DOCS)</Button>
+              <Button buttonType='primary' style={{display: 'inline-block'}} href='./docs/Danielle-Frappier-Resume-2022.pdf' target='_blank'>Download Resume (PDF)</Button>
+              <Button buttonType='secondary' style={{display: 'inline-block'}} href='./docs/Danielle-Frappier-Resume-2022.docx' target='_blank'>Download Resume (DOCS)</Button>
               <Timeline title='Work Experience' jobs={Jobs} />
+              <SkillSection title = 'Skills' subtitle={Subtitle} skills={Skills} />
+              <Timeline title='Education' jobs={Education} />
           </Container>
         </Grid>
       </Grid>

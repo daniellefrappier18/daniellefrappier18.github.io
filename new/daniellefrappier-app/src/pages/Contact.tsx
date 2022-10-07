@@ -2,13 +2,18 @@ import React from "react";
 import Grid from "@material-ui/core/Grid";
 import Container from "@material-ui/core/Grid";
 import { MenuButton } from "../components/MenuButton/menu-button.component";
-import { SocialLink } from '../components/SocialLink/social-link.component';
+import { SocialLink } from "../components/SocialLink/social-link.component";
 import { FullBackgroundImage } from "../components/FullBackgroundImage/full-background-image.component";
 import { IntroContent } from "../components/IntroContent/intro-content.component";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
-import { IconDefinition } from '@fortawesome/fontawesome-svg-core'
-import { faGithub, faLinkedin, faCodepen, faJsfiddle } from '@fortawesome/free-brands-svg-icons'
+import { IconDefinition } from "@fortawesome/fontawesome-svg-core";
+import {
+  faGithub,
+  faLinkedin,
+  faCodepen,
+  faJsfiddle,
+} from "@fortawesome/free-brands-svg-icons";
 
 type ContactProps = {
   className?: string;
@@ -42,18 +47,36 @@ const Contact = ({ className }: ContactProps) => {
           <p>
             Do you want to work together on a project? <br />
             Do you have a question or comment? <br />
-            Or do you just want to say hello? <br />
-            Send a message channels below I’ll get back to you ASAP.
+            Or do you just want to say hello?
           </p>
-
           <h3 className="section-title">
             You can find me on the following platforms, please reach out and say
             hello!
-          </h3>
-          <SocialLink icon={faGithub as IconDefinition} aria-label="LinkedIn" href="https://www.linkedin.com/in/daniellefrappier/" target="_blank" />
-                <SocialLink icon={faLinkedin as IconDefinition} aria-label="GitHub" href="https://github.com/daniellefrappier18" target="_blank" />
-                <SocialLink icon={faCodepen as IconDefinition} aria-label="Codepen" href="https://codepen.io/daniellefrapp/" target="_blank" />
-                <SocialLink icon={faJsfiddle as IconDefinition} aria-label="Codepen" href="https://jsfiddle.net/user/daniellefrappier/fiddles/" target="_blank" />
+          </h3>{" "}
+          <SocialLink
+            icon={faGithub as IconDefinition}
+            aria-label="LinkedIn"
+            href="https://github.com/daniellefrappier18"
+            target="_blank"
+          />
+          <SocialLink
+            icon={faLinkedin as IconDefinition}
+            aria-label="GitHub"
+            href="ttps://www.linkedin.com/in/daniellefrappier/"
+            target="_blank"
+          />
+          <SocialLink
+            icon={faCodepen as IconDefinition}
+            aria-label="Codepen"
+            href="https://codepen.io/daniellefrapp/"
+            target="_blank"
+          />
+          <SocialLink
+            icon={faJsfiddle as IconDefinition}
+            aria-label="Codepen"
+            href="https://jsfiddle.net/user/daniellefrappier/fiddles/"
+            target="_blank"
+          />
         </Container>
       </Grid>
     </Grid>

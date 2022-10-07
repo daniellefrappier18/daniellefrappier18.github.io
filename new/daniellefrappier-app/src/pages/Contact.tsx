@@ -52,17 +52,17 @@ const Contact = ({ className }: ContactProps) => {
           <h3 className="section-title">
             You can find me on the following platforms, please reach out and say
             hello!
-          </h3>{" "}
+          </h3>
           <SocialLink
-            icon={faGithub as IconDefinition}
+            icon={faLinkedin as IconDefinition}
             aria-label="LinkedIn"
-            href="https://github.com/daniellefrappier18"
+            href="ttps://www.linkedin.com/in/daniellefrappier/"
             target="_blank"
           />
           <SocialLink
-            icon={faLinkedin as IconDefinition}
+            icon={faGithub as IconDefinition}
             aria-label="GitHub"
-            href="ttps://www.linkedin.com/in/daniellefrappier/"
+            href="https://github.com/daniellefrappier18"
             target="_blank"
           />
           <SocialLink

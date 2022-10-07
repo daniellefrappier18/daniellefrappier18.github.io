@@ -61,7 +61,7 @@ const ProjectList = [
     children: <Button buttonType='primary' size='small' href='https://demos.retirement.jhancock.com/client-demo/index.html#/' target='_blank'>View Project</Button>,
   },
   {
-    title: 'Applause Marking Website',
+    title: 'Applause Marketing Website',
     description: 'New site for Applause with a heavy focus on accessibility, SEO and pagespeed.',
     builtWith: 'CraftCMS(Twig) • HTML/SCSS • Bulma Framework • JavaScript',
     children: <Button buttonType='primary' size='small' href='https://www.applause.com/' target='_blank'>View Project</Button>,

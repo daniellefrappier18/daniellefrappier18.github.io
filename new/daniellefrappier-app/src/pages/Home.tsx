@@ -112,16 +112,16 @@ function Home() {
                       subTitle="Front End Developer"
                     >
                       <div>
-                        <SocialLink
-                          icon={faGithub as IconDefinition}
+                      <SocialLink
+                          icon={faLinkedin as IconDefinition}
                           aria-label="LinkedIn"
-                          href="https://github.com/daniellefrappier18"
+                          href="https://www.linkedin.com/in/daniellefrappier/"
                           target="_blank"
                         />
                         <SocialLink
-                          icon={faLinkedin as IconDefinition}
-                          aria-label="GitHub"
-                          href="ttps://www.linkedin.com/in/daniellefrappier/"
+                          icon={faGithub as IconDefinition}
+                          aria-label="GitHub "
+                          href="https://github.com/daniellefrappier18"
                           target="_blank"
                         />
                         <SocialLink

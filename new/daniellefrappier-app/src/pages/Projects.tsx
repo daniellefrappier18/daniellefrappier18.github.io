@@ -19,7 +19,7 @@ const PersonalProjects = [
     title: 'Storybook for this wesite',
     description: 'Check out the components I used to build this website on Storybook',
     builtWith: 'React • Typescript • Storybook',
-    children: <Button buttonType='primary' size='small' href='../docs-build/index.html' target='_blank'>View Project</Button>,
+    children: <Button buttonType='primary' size='small' href='../storybook-static/index.html?path=/story/components-button--details' target='_blank'>View Project</Button>,
   },
   {
     title: 'Is Today a Good Day to go to the Beach?',

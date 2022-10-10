@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import styled from 'styled-components';
 import { makeStyles, createStyles, Theme } from "@material-ui/core/styles";
 import { Paper, Grid } from "@material-ui/core";
 import { FullBackgroundImage } from "../components/FullBackgroundImage/full-background-image.component";
@@ -59,6 +60,15 @@ const useStyles = makeStyles((theme: Theme) =>
     },
   })
 );
+const HomeGrid = styled(Grid)`
+  height: auto;
+  position: relative;
+
+  @media screen and (min-width: 960px) {
+    height: 100%;
+    position: fixed;
+  }
+`;
 function Home() {
   const classes = useStyles();
   const { currentSection } = useContext(ActiveSectionContext);
@@ -89,10 +99,9 @@ function Home() {
       {transitionHome((style, item) =>
         item ? (
           <animated.div style={style}>
-            <Grid
+            <HomeGrid 
               container
               spacing={0}
-              style={{ height: "100%", position: "fixed" }}
             >
               <Grid
                 item
@@ -302,7 +311,7 @@ function Home() {
                   </Paper>
                 </Grid>
               </Grid>
-            </Grid>
+            </HomeGrid >
           </animated.div>
         ) : null
       )}

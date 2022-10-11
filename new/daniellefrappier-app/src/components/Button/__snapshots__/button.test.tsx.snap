@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button component Button renders correctly Props 1`] = `
+<a
+  className="buttonstyle__ButtonComponent-sc-ypiqrg-0 fUGPhs"
+  href="https://www.daniellefrappier.com"
+  size="medium"
+  target="_blank"
+/>
+`;
+
+exports[`Button component Button renders correctly at full width 1`] = `
+<button
+  className="buttonstyle__ButtonComponent-sc-ypiqrg-0 jVyhAE"
+  role="button"
+  size="medium"
+/>
+`;
+
+exports[`Button component Button renders correctly with no props 1`] = `
+<button
+  className="buttonstyle__ButtonComponent-sc-ypiqrg-0 idFOlP"
+  role="button"
+  size="medium"
+/>
+`;
+
+exports[`Button component Button renders correctly with small size and secondary 1`] = `
+<a
+  className="buttonstyle__ButtonComponent-sc-ypiqrg-0 nczYq"
+  href="https://www.daniellefrappier.com"
+  size="small"
+  target="_blank"
+/>
+`;
+
+exports[`Button component Button renders with no props 1`] = `
+<button
+  className="buttonstyle__ButtonComponent-sc-ypiqrg-0 idFOlP"
+  role="button"
+  size="medium"
+/>
+`;

@@ -1,0 +1,14 @@
+{
+    "presets": ["@babel/env", "@babel/typescript", "airbnb"],
+    "plugins": [
+      [
+        "styled-components",
+        {
+          "displayName": true
+        }
+      ],
+      ["@babel/proposal-object-rest-spread"],
+      ["@babel/plugin-transform-runtime"]
+    ]
+  }
+  

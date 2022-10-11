@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Timeline component Timeline renders correctly Props 1`] = `
+<div
+  className="timelinestyle__TimelineComponent-sc-e6g3ra-0 cCXEpk"
+>
+  <h2
+    className="timelinestyle__TimelineTitle-sc-e6g3ra-1 iCuyKS"
+  >
+    Work Experience
+  </h2>
+  <div
+    className="timelinestyle__Item-sc-e6g3ra-2 gRqQGD"
+  >
+    <div
+      className="timelinestyle__ItemBullet-sc-e6g3ra-3 eoyuly"
+    />
+    <div
+      className="timelinestyle__ItemContent-sc-e6g3ra-4 jyrCNP"
+    >
+      <div
+        className="timelinestyle__ItemTitleContainer-sc-e6g3ra-5 AfuSy"
+      >
+        <h3
+          className="timelinestyle__ItemTitle-sc-e6g3ra-6 jzrHOl"
+        >
+          Senior Systems Design Engineer
+          <span
+            className="timelinestyle__ItemSubtitle-sc-e6g3ra-7 cJcfTz"
+          >
+            / September 2021 - Current
+             
+            <br />
+             
+            Monster
+          </span>
+        </h3>
+      </div>
+      <ul
+        className="timelinestyle__ItemText-sc-e6g3ra-8 clbOGA"
+      >
+        <li>
+          Team lead for Randstad Brand Design System. As Team Lead I was responsible for mentoring junior engineers, establishing code standards and best practices and making decisions on the architecture of the design system.
+        </li>
+        <li>
+          Built React component library with TypeScript Styled Components, wrote unit tests using Jest and React Testing Library and documented components in Storybook.
+        </li>
+        <li>
+          Provided support for monster.com homepage built using Gatsby.
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+`;

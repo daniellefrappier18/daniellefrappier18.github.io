@@ -61,7 +61,7 @@ const useStyles = makeStyles((theme: Theme) =>
   })
 );
 const HomeGrid = styled(Grid)`
-  height: auto;
+  height: 100%;
   position: relative;
 
   @media screen and (min-width: 960px) {

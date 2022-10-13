@@ -16,7 +16,7 @@ type ResumeProps = {
 const sectionTitle = <>re<span>s</span>ume</>;
 const Jobs = [
   {
-    title: "Senior Systems Design Engineer",
+    title: "Senior Design Systems Engineer",
     date: "/ September 2021 - Current",
     location: "Monster",
     description: (

@@ -146,8 +146,7 @@ const Education = [
     date: " / Google / Codecademy / Mijingo / AGI Training",
     description: (
       <>
-      <li>Google SEO Certification - 2025</li>
-      <li>Google SEO Certification - 2025</li>
+      <li>Google SEO Certification - 2022</li>
       <li>Codecademy Courses - 2017 - 2019 <br/>
       jQuery<br/>
       Saas<br/>

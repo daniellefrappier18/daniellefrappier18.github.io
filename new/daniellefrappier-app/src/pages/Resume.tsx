@@ -15,9 +15,33 @@ type ResumeProps = {
 }
 const sectionTitle = <>re<span>s</span>ume</>;
 const Jobs = [
+    {
+    title: "Senior Design Systems Engineer",
+    date: "/ November 2022 - August 2025",
+    location: "Medallia",
+    description: (
+      <>
+      <li>Contributed to the development of the Solid Survey Design System
+(Solid.js, Vite, Storybook), building reusable, accessible UI
+components that power Medallia’s survey platform.</li>
+<li>Enhanced and maintained the Alchemy Design System (React.js,
+TypeScript, Styled Components, Vite), creating new components
+from scratch and resolving high-priority bug and accessibility
+tickets.</li>
+<li>Partnered cross-functionally with designers, product managers,
+and engineers to ensure consistent design patterns, component
+reusability, and alignment with product requirements.</li>
+<li>Authored clear, developer-focused documentation for new and
+updated components, improving onboarding and adoption across
+engineering teams.</li>
+<li>Implemented and executed automated testing with Jest, Storybook,
+and Playwright to ensure component stability, accessibility
+compliance, and cross-browser reliability.</li>
+      </>)
+  },
   {
     title: "Senior Design Systems Engineer",
-    date: "/ September 2021 - Current",
+    date: "/ September 2021 - Novemeber 2022",
     location: "Monster",
     description: (
       <>
@@ -104,10 +128,14 @@ const Skills = [
   },
   {
     title: 'TypeScript',
-    level: 40,
+    level: 60,
   },
   {
     title: 'React',
+    level: 80,
+  },
+    {
+    title: 'Solid',
     level: 80,
   },
   {
@@ -120,6 +148,10 @@ const Skills = [
   },
   {
     title: 'React Testing Library',
+    level: 30,
+  },
+    {
+    title: 'Playwright',
     level: 30,
   },
   {

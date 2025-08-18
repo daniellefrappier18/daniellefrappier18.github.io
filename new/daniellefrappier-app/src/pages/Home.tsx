@@ -24,7 +24,6 @@ import {
   faGithub,
   faLinkedin,
   faCodepen,
-  faJsfiddle,
 } from "@fortawesome/free-brands-svg-icons";
 
 const useStyles = makeStyles((theme: Theme) =>
@@ -137,12 +136,6 @@ function Home() {
                           icon={faCodepen as IconDefinition}
                           aria-label="Codepen"
                           href="https://codepen.io/daniellefrapp/"
-                          target="_blank"
-                        />
-                        <SocialLink
-                          icon={faJsfiddle as IconDefinition}
-                          aria-label="Codepen"
-                          href="https://jsfiddle.net/user/daniellefrappier/fiddles/"
                           target="_blank"
                         />
                       </div>

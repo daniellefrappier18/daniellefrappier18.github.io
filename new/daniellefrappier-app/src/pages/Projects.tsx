@@ -31,12 +31,6 @@ const PersonalProjects = [
 
 const ProjectList = [
   {
-    title: 'Randstad Brand Design System',
-    description: 'A design system for Randstad Global, a leading staffing agency.',
-    builtWith: 'React • Typescript • Storybook',
-    children: <Button buttonType='primary' size='small' href='https://ux.monster.com/randstad/?path=/story/components-avatar--details' target='_blank'>View Project</Button>,
-  },
-  {
     title: 'Orbit Design System',
     description: 'Legacy design system for Randstad Global, a leading staffing agency.',
     builtWith: 'JavaScript • Tailwind',
@@ -65,12 +59,6 @@ const ProjectList = [
     description: 'New site for Applause with a heavy focus on accessibility, SEO and pagespeed.',
     builtWith: 'CraftCMS(Twig) • HTML/SCSS • Bulma Framework • JavaScript',
     children: <Button buttonType='primary' size='small' href='https://www.applause.com/' target='_blank'>View Project</Button>,
-  },
-  {
-    title: 'Applause Women in Tech Event Landing',
-    description: 'Developed landing page for Applause\'s Yealy Women in Tech User Conference',
-    builtWith: 'Marketo • HTML/CSS • Bourbon Neat Framework • JavaScript',
-    children: <Button buttonType='primary' size='small' href='https://go.applause.com/women-in-tech-2018.html' target='_blank'>View Project</Button>,
   },
   {
     title: 'Campus Safety Magazine',

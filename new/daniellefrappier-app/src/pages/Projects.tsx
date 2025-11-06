@@ -19,7 +19,7 @@ const PersonalProjects = [
     title: 'USA Ski Resort Explorer',
     description: 'A handy dandy tool to help you explore ski resorts across the USA. Filter by state, difficulty, and more!',
     builtWith: 'React • Typescript • GRAPHQL',
-    children: <Button buttonType='primary' size='small' href='https://www.daniellefrappier.com/ski-resort-explorer/' target='_blank'>View Project</Button>,
+    children: <Button buttonType='primary' size='small' href='https://www.daniellefrappier.com/ski-resort-look-up/' target='_blank'>View Project</Button>,
   },
   {
     title: 'Lorem.io Interview Challenge',

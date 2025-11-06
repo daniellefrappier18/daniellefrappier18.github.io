@@ -16,10 +16,17 @@ type ResumeProps = {
 const sectionTitle = <>pro<span>j</span>ects</>;
 const PersonalProjects = [
   {
-    title: 'Storybook for this wesite',
-    description: 'Check out the components I used to build this website on Storybook',
-    builtWith: 'React • Typescript • Storybook',
-    children: <Button buttonType='primary' size='small' href='../storybook-static/index.html?path=/story/components-button--details' target='_blank'>View Project</Button>,
+    title: 'USA Ski Resort Explorer',
+    description: 'A handy dandy tool to help you explore ski resorts across the USA. Filter by state, difficulty, and more!',
+    builtWith: 'React • Typescript • GRAPHQL',
+    children: <Button buttonType='primary' size='small' href='https://www.daniellefrappier.com/ski-resort-explorer/' target='_blank'>View Project</Button>,
+  },
+  {
+    title: 'Lorem.io Interview Challenge',
+    description: 'Welcome to the Lorem.io interview challenge project! This monorepo contains a React component library and a demo application.',
+    builtWith: 'React • Typescript • Vite •Storybook •CSS Modules',
+    children: <Button buttonType='primary' size='small' href='https://www.daniellefrappier.com/lorem.io-interview-challenege/' target='_blank'>View Project</Button>,
+    
   },
   {
     title: 'Is Today a Good Day to go to the Beach?',
@@ -27,6 +34,12 @@ const PersonalProjects = [
     builtWith: 'React',
     children: <Button buttonType='primary' size='small' href='https://www.daniellefrappier.com/beachday/build/index.html' target='_blank'>View Project</Button>,
   },
+  {
+    title: 'Storybook for this wesite',
+    description: 'Check out the components I used to build this website on Storybook',
+    builtWith: 'React • Typescript • Storybook',
+    children: <Button buttonType='primary' size='small' href='../storybook-static/index.html?path=/story/components-button--details' target='_blank'>View Project</Button>,
+  }
 ];
 
 const ProjectList = [

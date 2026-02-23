@@ -5,8 +5,8 @@ import {
     FactTitle,
     FactDescription
  } from './facts-section.style';
-import Grid from "@material-ui/core/Grid";
-import Container from "@material-ui/core/Grid";
+import Grid from "@mui/material/Grid";
+import Container from "@mui/material/Container";
 import { FactsSectionProps } from './facts-section.props'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 

@@ -1,6 +1,6 @@
 import React from 'react';
-import Grid from "@material-ui/core/Grid";
-import Container from "@material-ui/core/Grid";
+import Grid from "@mui/material/Grid";
+import Container from "@mui/material/Container";
 import { MenuButton } from '../components/MenuButton/menu-button.component';
 import { Button } from '../components/Button/button.component';
 import { FullBackgroundImage } from "../components/FullBackgroundImage/full-background-image.component";
@@ -16,96 +16,62 @@ type ResumeProps = {
 const sectionTitle = <>re<span>s</span>ume</>;
 const Jobs = [
     {
-    title: "Senior Design Systems Engineer",
+    title: "Senior Front-End Engineer",
+    date: "/ November 2025 - Present",
+    location: "Ketryx",
+    description: (
+      <>
+      <li>Built production UI for AI workflows using Next.js, React, TypeScript, GraphQL, Prisma, and Tailwind CSS.</li>
+      <li>Owned end-to-end UI/UX implementation for the AI product area, from design review through deployment.</li>
+      <li>Delivered a prioritized Home dashboard that significantly improved user workflow efficiency.</li>
+      <li>Developed reusable components documented in Storybook; implemented data-rich visualizations including a blast-radius chart.</li>
+      <li>Wrote automated tests using React Testing Library and Cucumber; collaborated cross-functionally in an Agile environment.</li>
+      </>)
+  },
+  {
+    title: "Senior Design System Engineer",
     date: "/ November 2022 - August 2025",
     location: "Medallia",
     description: (
       <>
-      <li>Contributed to the development of the Solid Survey Design System
-(Solid.js, Vite, Storybook), building reusable, accessible UI
-components that power Medallia’s survey platform.</li>
-<li>Enhanced and maintained the Alchemy Design System (React.js,
-TypeScript, Styled Components, Vite), creating new components
-from scratch and resolving high-priority bug and accessibility
-tickets.</li>
-<li>Partnered cross-functionally with designers, product managers,
-and engineers to ensure consistent design patterns, component
-reusability, and alignment with product requirements.</li>
-<li>Authored clear, developer-focused documentation for new and
-updated components, improving onboarding and adoption across
-engineering teams.</li>
-<li>Implemented and executed automated testing with Jest, Storybook,
-and Playwright to ensure component stability, accessibility
-compliance, and cross-browser reliability.</li>
+      <li>Solid Survey Design System (SolidJS): Contributed reusable, accessible UI components powering Medallia's survey platform using SolidJS, Vite, and Storybook.</li>
+      <li>Alchemy Design System (React): Enhanced and maintained a React/TypeScript/Styled Components library, building new components from scratch and resolving high-priority bug and accessibility tickets.</li>
+      <li>Authored clear, developer-focused documentation for new and updated components, improving onboarding and adoption across engineering teams.</li>
+      <li>Partnered cross-functionally with designers, product managers, and engineers to ensure consistent design patterns and component reusability.</li>
+      <li>Implemented and executed automated testing with Jest, Storybook, and Playwright to ensure component stability, accessibility compliance, and cross-browser reliability.</li>
       </>)
   },
   {
-    title: "Senior Design Systems Engineer",
-    date: "/ September 2021 - Novemeber 2022",
-    location: "Monster",
+    title: "Senior Design System Engineer",
+    date: "/ September 2021 - November 2022",
+    location: "Monster / Randstad",
     description: (
       <>
-      <li>Team lead for Randstad Brand Design System. Responsible for mentoring junior engineers, establishing code standards and best practices and making decisions on the architecture of the design system.</li>
-      <li>Built React component library with TypeScript & Styled Components, wrote unit tests using Jest and React Testing Library and documented components in Storybook.</li>
-      <li>Provided support for monster.com homepage built using Gatsby.</li>
+      <li>Team lead for Randstad Brand Design System — responsible for mentoring junior engineers, establishing code standards, and driving architecture decisions.</li>
+      <li>Built a comprehensive React component library with TypeScript and Styled Components; achieved full automated test coverage.</li>
+      <li>Documented all components and usage guidelines extensively in Storybook for adoption across engineering teams.</li>
+      <li>Provided frontend support for the monster.com homepage built with Gatsby.</li>
       </>)
   },
   {
-    title: "Front End Engineer",
+    title: "Frontend Engineer",
     date: "/ January 2019 - September 2021",
     location: "John Hancock",
     description: (
       <>
-      <li>Sole developer for web applications used by Sales, Marketing and Education departments to sell, promote and onboard clients and new users.</li>
-      <li>Developed web applications using AngularJS and ReactJS/Context API.</li>
-      <li>Responsible for adding future forward functionality to applications and maintaining code bases.</li>
-      <li>Accountable for QA and release process for all assigned web applications.</li>
-      <li>Developed UI/UX style guide and associated code via https://patternlab.io. This is used by application development teams across John Hancock to streamline common application assets.</li>
+      <li>Sole developer for web applications used by Sales, Marketing, and Education departments to sell, promote, and onboard clients.</li>
+      <li>Developed responsive applications using AngularJS and React/Context API; modernized legacy systems by migrating to ES6+.</li>
+      <li>Owned QA and release process for all assigned web applications.</li>
       </>)
   },
   {
-    title: "Front End Engineer",
+    title: "Front-End Developer",
     date: "/ November 2017 - January 2019",
     location: "Applause",
     description: (
       <>
-      <li>Lead migration and development of applause.com from contentful/middleman to CraftCMS.</li>
-      <li>Identified areas on applause.com not accessible/WCAG 2.0 compliant and implemented changes to correct.</li>
-      <li>Implemented OOCSS to allow for scalable and reusable code.</li>
-      <li>Managed acquiring third party hosting and setup. Ensured a smooth transition from internal to outside hosting.</li>
-      <li>Implemented new landing pages and emails in Marketo.</li>
-      </>)
-  },
-  {
-    title: "UX Designer/Developer",
-    date: "/ September 2017 - November 2017",
-    location: "Aetna",
-    description: (
-      <>
-      <li>Created landing pages and email templates to be WCAG 2.0 compliant.</li>
-      </>)
-  },
-  {
-    title: "Senior Web Designer/Developer",
-    date: "/ October 2015 - September 2017",
-    location: "EH Media",
-    description: (
-      <>
-      <li>Responsible for both back-end and front end development, including creating WordPress themes and plugins.</li>
-      <li>Designed and implemented new functionality that lead to engaging product offerings to and generated higher revenue.</li>
-      <li>Ensured high-performance and availability, and managed technical aspects of Wordpress sites.</li>
-      </>)
-  },
-  {
-    title: "Web Designer/Developer",
-    date: "/ March 2013 - October 2015",
-    location: "ACIS Educational Tours",
-    description: (
-      <>
-      <li>Lead designer and coder for three brands: www.acis.com, www.encoretours.com and www.goplaytours.com.</li>
-      <li>Designed and implemented landing pages and emails in Marketo, Hubspot and ClickDimensions platforms.</li>
-      <li>Responsible for design, support and execution of Marketo landing pages and emails (previously was Hubspot).</li>
-      <li>Designed tradeshow booths, print materials, infographics and ebooks.</li>
+      <li>Led migration of applause.com from Contentful/Middleman to CraftCMS; implemented new landing pages and Marketo email campaigns.</li>
+      <li>Identified and remediated WCAG 2.0 accessibility gaps across the site.</li>
       </>)
   },
   {
@@ -114,55 +80,79 @@ compliance, and cross-browser reliability.</li>
     location: "MEDITECH",
     description: (
       <>
-      <li>Promoted three times during tenure. Previous positions held were: Senior Web Designer and Graphic Designer.</li>
-      <li>Responsible for the successful delivery and execution of web design projects for public web presence, corporate events and customer focused web magazine with a team of 5 designers.</li>
-      <li>Identified and led migration from a home-grown CMS to Drupal which provided the company a more efficient and modern publishing platform to deliver Marketing, Sales and Company goals.</li>
-      <li>Designed custom sales demos, many for proposals above $1 million dollars.</li>
+      <li>Promoted three times (Graphic Designer → Senior Web Designer → Supervisor); led a team delivering web design projects for public web presence, corporate events, and a customer-focused web magazine.</li>
+      <li>Identified and led migration from a home-grown CMS to Drupal, providing a more efficient and modern publishing platform.</li>
       </>)
   },
 ];
 const Skills = [
   {
-    title: 'JavaScript',
-    level: 80,
+    title: 'React',
+    level: 90,
+  },
+  {
+    title: 'Next.js',
+    level: 70,
   },
   {
     title: 'TypeScript',
-    level: 60,
+    level: 80,
   },
   {
-    title: 'React',
+    title: 'JavaScript (ES6+)',
+    level: 90,
+  },
+  {
+    title: 'SolidJS',
+    level: 70,
+  },
+  {
+    title: 'HTML5 / CSS3',
+    level: 95,
+  },
+  {
+    title: 'MUI (Material-UI)',
     level: 80,
   },
-    {
-    title: 'Solid',
-    level: 80,
+  {
+    title: 'Tailwind CSS',
+    level: 75,
   },
   {
     title: 'Styled Components',
+    level: 85,
+  },
+  {
+    title: 'GraphQL',
+    level: 65,
+  },
+  {
+    title: 'React Testing Library',
     level: 70,
   },
   {
     title: 'Jest',
-    level: 30,
+    level: 70,
   },
   {
-    title: 'React Testing Library',
-    level: 30,
-  },
-    {
     title: 'Playwright',
-    level: 30,
+    level: 60,
   },
   {
-    title: 'AngularJS',
-    level: 40,
+    title: 'Storybook',
+    level: 85,
+  },
+  {
+    title: 'Vite / Webpack',
+    level: 75,
+  },
+  {
+    title: 'Git / GitHub Actions',
+    level: 80,
   },
 ];
-const Subtitle = 
-  <>
-  See full list on <a href="./docs/Danielle-Frappier-Resume-2025.pdf" target="_blank">resume</a>.
-  </>;
+const ProfessionalSummary = "Senior Front-End Engineer with 10+ years of experience building scalable, accessible user interfaces for enterprise SaaS platforms, AI products, and high-traffic web applications. Deep expertise in React, TypeScript, and modern frontend architecture, with a strong design sensibility that bridges the gap between engineering and UX. Proven track record leading design system initiatives, mentoring engineers, and delivering pixel-perfect implementations from Figma to production.";
+
 const Education = [
   {
     title: "Framingham State University",
@@ -171,30 +161,6 @@ const Education = [
       <>
       <li>BA, Graphic Design</li>
       <li>Minors in Computer Science and Communication Arts</li>
-      </>)
-  },
-  {
-    title: "Online Courses",
-    date: " / Google / Codecademy / Mijingo / AGI Training",
-    description: (
-      <>
-      <li>Google SEO Certification - 2022</li>
-      <li>Codecademy Courses - 2017 - 2019 <br/>
-      jQuery<br/>
-      Saas<br/>
-      Javascript<br/>
-      PHP<br/>
-      AngularJS 1.X<br/>
-      Learn ReactJS: Part I<br/>
-      Learn ReactJS: Part II
-      </li>
-      <li>Mijingo Courses - 2018 <br/>
-      Craft CMS Essentials<br/>
-      Flexible Twig Templates in Craft<br/>
-      Up and Running with ExpressionEngine
-      </li>
-      <li>UX Design - AGI Training - 2014</li>
-      <li>HTML5 - 2012</li>
       </>)
   }
 ];
@@ -218,11 +184,12 @@ const Resume = ( {
           </MenuButton>
           <Container className="content">
           <h2 className="section-title">What I've been up to lately</h2>
+              <p>{ProfessionalSummary}</p>
               <p>You can download my Resume in pdf and docx format below. Or scroll on to read more about my experience, skills and education.</p>
-              <Button buttonType='primary' style={{display: 'inline-block'}} href='./docs/Danielle-Frappier-Resume-2025.pdf' target='_blank'>Download Resume (PDF)</Button>
-              <Button buttonType='secondary' style={{display: 'inline-block'}} href='./docs/Danielle-Frappier-Resume-2025.docx' target='_blank'>Download Resume (DOCS)</Button>
+              <Button buttonType='primary' style={{display: 'inline-block'}} href='./docs/Danielle-Frappier-Resume-2026.pdf' target='_blank'>Download Resume (PDF)</Button>
+              <Button buttonType='secondary' style={{display: 'inline-block'}} href='./docs/Danielle-Frappier-Resume-2026.docx' target='_blank'>Download Resume (DOCS)</Button>
               <Timeline title='Work Experience' jobs={Jobs} />
-              <SkillSection title = 'Skills' subtitle={Subtitle} skills={Skills} />
+              <SkillSection title = 'Core Skills' skills={Skills} />
               <Timeline title='Education' jobs={Education} />
           </Container>
         </Grid>

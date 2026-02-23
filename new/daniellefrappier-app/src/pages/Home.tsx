@@ -1,7 +1,6 @@
 import React, { useContext } from "react";
 import styled from 'styled-components';
-import { makeStyles, createStyles, Theme } from "@material-ui/core/styles";
-import { Paper, Grid } from "@material-ui/core";
+import { Paper, Grid } from "@mui/material";
 import { FullBackgroundImage } from "../components/FullBackgroundImage/full-background-image.component";
 import { IntroContent } from "../components/IntroContent/intro-content.component";
 import { SocialLink } from "../components/SocialLink/social-link.component";
@@ -26,39 +25,6 @@ import {
   faCodepen,
 } from "@fortawesome/free-brands-svg-icons";
 
-const useStyles = makeStyles((theme: Theme) =>
-  createStyles({
-    root: {
-      flexGrow: 1,
-    },
-    paper: {
-      padding: theme.spacing(0),
-      textAlign: "center",
-      color: theme.palette.text.secondary,
-      boxSizing: "border-box",
-      width: "100%",
-      height: "100%",
-      overflow: "hidden",
-      borderRadius: 0,
-    },
-    gridItem: {
-      boxSizing: "border-box",
-      padding: theme.spacing(0),
-    },
-    masonryItem: {
-      boxSizing: "border-box",
-      padding: `0 ${theme.spacing(0)}px ${theme.spacing(0)}px ${theme.spacing(
-        0
-      )}px`,
-      [theme.breakpoints.up("lg")]: {
-        padding: `0px ${theme.spacing(0)}px 0px 0px`,
-      },
-      [theme.breakpoints.down("sm")]: {
-        padding: `0px ${theme.spacing(0)}px 0px 0px`,
-      },
-    },
-  })
-);
 const HomeGrid = styled(Grid)`
   height: 100%;
   position: relative;
@@ -68,8 +34,36 @@ const HomeGrid = styled(Grid)`
     position: fixed;
   }
 `;
+
+const StyledPaper = styled(Paper)`
+  padding: 0;
+  text-align: center;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 0;
+`;
+
+const StyledGridItem = styled(Grid)`
+  box-sizing: border-box;
+  padding: 0;
+`;
+
+const MasonryItem = styled(Grid)`
+  box-sizing: border-box;
+  padding: 0;
+
+  @media screen and (min-width: 1280px) {
+    padding: 0;
+  }
+
+  @media screen and (max-width: 600px) {
+    padding: 0;
+  }
+`;
+
 function Home() {
-  const classes = useStyles();
   const { currentSection } = useContext(ActiveSectionContext);
   const transitionHome = useTransition(currentSection === "home", {
     from: { y: -800, opacity: 1, height: "100%", width: "100%" },
@@ -102,14 +96,13 @@ function Home() {
               container
               spacing={0}
             >
-              <Grid
+              <StyledGridItem
                 item
                 md={6}
                 xs={12}
                 id="main"
-                className={`${classes.gridItem}`}
               >
-                <Paper elevation={0} className={`${classes.paper}`}>
+                <StyledPaper elevation={0}>
                   <FullBackgroundImage
                     className="content-section"
                     srcSet="./img/danielle_frappier_bg.jpg"
@@ -141,24 +134,22 @@ function Home() {
                       </div>
                     </IntroContent>
                   </FullBackgroundImage>
-                </Paper>
-              </Grid>
-              <Grid
+                </StyledPaper>
+              </StyledGridItem>
+              <StyledGridItem
                 item
                 container
                 md={6}
                 xs={12}
                 id="menu"
-                className={classes.gridItem}
               >
-                <Grid
+                <MasonryItem
                   item
                   lg={12}
                   md={12}
                   xs={12}
-                  className={`${classes.masonryItem}`}
                 >
-                  <Paper elevation={0} className={classes.paper}>
+                  <StyledPaper elevation={0}>
                     <MenuButton id="profile">
                       <FullBackgroundImage srcSet="./img/profile.jpg">
                         <IntroContent>
@@ -187,16 +178,15 @@ function Home() {
                         </IntroContent>
                       </FullBackgroundImage>
                     </MenuButton>
-                  </Paper>
-                </Grid>
-                <Grid
+                  </StyledPaper>
+                </MasonryItem>
+                <MasonryItem
                   item
                   lg={12}
                   md={12}
                   xs={12}
-                  className={`${classes.masonryItem}`}
                 >
-                  <Paper elevation={0} className={classes.paper}>
+                  <StyledPaper elevation={0}>
                     <MenuButton id="resume">
                       <FullBackgroundImage srcSet="./img/resume.jpg">
                         <IntroContent>
@@ -225,16 +215,15 @@ function Home() {
                         </IntroContent>
                       </FullBackgroundImage>
                     </MenuButton>
-                  </Paper>
-                </Grid>
-                <Grid
+                  </StyledPaper>
+                </MasonryItem>
+                <MasonryItem
                   item
                   lg={12}
                   md={12}
                   xs={12}
-                  className={`${classes.masonryItem}`}
                 >
-                  <Paper elevation={0} className={classes.paper}>
+                  <StyledPaper elevation={0}>
                     <MenuButton id="projects">
                       <FullBackgroundImage srcSet="./img/projects.jpg">
                         <IntroContent>
@@ -263,16 +252,15 @@ function Home() {
                         </IntroContent>
                       </FullBackgroundImage>
                     </MenuButton>
-                  </Paper>
-                </Grid>
-                <Grid
+                  </StyledPaper>
+                </MasonryItem>
+                <MasonryItem
                   item
                   lg={12}
                   md={12}
                   xs={12}
-                  className={`${classes.masonryItem}`}
                 >
-                  <Paper elevation={0} className={classes.paper}>
+                  <StyledPaper elevation={0}>
                     <MenuButton id="contact">
                       <FullBackgroundImage srcSet="./img/contact.jpg">
                         <IntroContent>
@@ -301,9 +289,9 @@ function Home() {
                         </IntroContent>
                       </FullBackgroundImage>
                     </MenuButton>
-                  </Paper>
-                </Grid>
-              </Grid>
+                  </StyledPaper>
+                </MasonryItem>
+              </StyledGridItem>
             </HomeGrid >
           </animated.div>
         ) : null

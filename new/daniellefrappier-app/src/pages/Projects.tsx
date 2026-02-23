@@ -1,6 +1,6 @@
 import React from 'react';
-import Grid from "@material-ui/core/Grid";
-import Container from "@material-ui/core/Grid";
+import Grid from "@mui/material/Grid";
+import Container from "@mui/material/Container";
 import { MenuButton } from '../components/MenuButton/menu-button.component';
 import { ProjectsSection } from '../components/ProjectsSection/projects-section.component';
 import { Button } from '../components/Button/button.component';
@@ -128,11 +128,11 @@ const Projects = ( {
             </>
           </MenuButton>
           <Container className="content">
-            <h2 className="section-title">Some stuff I've done.</h2>
-            <ProjectsSection projects={ProjectList} />
-
             <h2 className="section-title">Some personal projects.</h2>
             <ProjectsSection projects={PersonalProjects} />
+
+            <h2 className="section-title">Some stuff I've done.</h2>
+            <ProjectsSection projects={ProjectList} />
 
           </Container>
         </Grid>

@@ -42,7 +42,8 @@ const StyledPaper = styled(Paper)`
   width: 100%;
   height: 100%;
   overflow: hidden;
-  border-radius: 0;
+  border-radius: 0 !important;
+  box-shadow: none !important;
 `;
 
 const StyledGridItem = styled(Grid)`
